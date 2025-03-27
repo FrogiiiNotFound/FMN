@@ -1,0 +1,113 @@
+.footer {
+    position: relative;
+    background: rgb(48, 111, 213);
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+
+    &__container {
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__info {
+        p {
+            @include t_Inter();
+            font-size: r(10);
+            line-height: 120%;
+            letter-spacing: 4%;
+            text-transform: uppercase;
+            opacity: 0.5;
+            padding-bottom: 13px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            li {
+                @include t_Inter();
+                font-size: r(14);
+                font-weight: 400;
+                line-height: 140%;
+            }
+        }
+    }
+
+    &__contact {
+        p {
+            @include t_Inter();
+            font-size: r(10);
+            line-height: 120%;
+            letter-spacing: 4%;
+            text-transform: uppercase;
+            opacity: 0.5;
+            padding-bottom: 13px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li {
+                @include t_Inter();
+                font-size: r(14);
+                font-weight: 400;
+                line-height: 140%;
+            }
+        }
+    }
+
+    &__social {
+        padding-top: 45px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            @include t_Inter();
+            font-size: r(14);
+            font-weight: 400;
+            line-height: 140%;
+            text-decoration-line: underline;
+            opacity: 0.6;
+        }
+    }
+
+    &__links {
+        padding: 70px 0px 20px;
+        :last-child {
+            padding-left: 24px;
+        }
+        text-align: center;
+        a {
+            @include t_Inter();
+            font-size: r(12);
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: 2%;
+
+        }
+    }
+
+    &__subtext {
+        text-align: center;
+        p {
+            @include t_Inter();
+            font-size: r(12);
+            font-weight: 400;
+            line-height: 140%;
+        }
+    }
+
+    &__light {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        z-index: -1;
+
+        & img {
+            width: 2000px;
+            height: 300px;
+        }
+    }
+}

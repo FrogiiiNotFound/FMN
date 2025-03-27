@@ -1,0 +1,127 @@
+.result {
+    &__container {
+        position: relative;
+    }
+
+    &__dekor {
+    }
+
+    &__subtitle {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        img {
+        }
+        p {
+            @include t_Manrope();
+            font-size: r(14);
+            letter-spacing: 12%;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+    }
+
+    &__title {
+        @include t_Manrope();
+        font-size: r(40);
+        font-weight: 400;
+        line-height: 90%;
+        text-transform: uppercase;
+    }
+
+    &__texts {
+        position: relative;
+        padding: 30px 0px;
+        div {
+            display: flex;
+        }
+        p {
+            padding: 15px;
+            max-width: 220px;
+
+            @include t_Manrope();
+            font-size: r(16);
+            line-height: 140%;
+        }
+
+        img {
+            z-index: 4;
+        }
+    }
+
+    &__woman {
+    }
+
+    &__button {
+        cursor: pointer;
+    }
+}
+.woman-result {
+    &__img {
+    }
+}
+.woman-result {
+    padding-top: 55px;
+    position: relative;
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 31%;
+        z-index: -1;
+
+        border: 0.68px solid rgba(48, 111, 213, 0.5);
+        border-radius: 67.23px;
+        background: rgb(255, 255, 255);
+
+        padding: 30px 10px;
+        display: inline-flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            max-width: 76px;
+            @include t_Manrope();
+            font-size: r(8);
+            line-height: 130%;
+            color: rgb(145, 145, 145);
+        }
+    }
+}
+
+.result__textsDekor {
+    position: absolute;
+    right: -58px;
+    top: 33%;
+}
+
+.result__button {
+    background: rgb(255, 255, 255);
+    color: rgb(48, 111, 213);
+}
+
+.result__buttonBG {
+    background-color: rgb(48, 111, 213);
+    text-align: center;
+    padding: 15px;
+    width: 100vm;
+}
+
+@media (min-width: 426px) {
+    .woman-result__text {
+        display: none;
+    }
+    .result__woman {
+        img {
+            position: absolute;
+            right: 5%;
+            top: -650%;
+        }
+    }
+}
+
+@media (min-width: 852px) {
+    .result__texts img {
+        top: 0%;
+    }
+}

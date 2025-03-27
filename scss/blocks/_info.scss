@@ -1,0 +1,195 @@
+.info {
+    position: relative;
+    &_dontSkip {
+        text-transform: uppercase;
+        @include t_Inter();
+        font-size: r(12);
+        line-height: p(13, 12);
+
+        margin-top: 10px;
+        padding: 10px 40px 10px 40px;
+        border-radius: 150px;
+        background: rgba(48, 111, 213, 0.1);
+        display: inline-block;
+    }
+
+    &__container {
+        padding: 125px 20px 25px;
+    }
+
+    &__cards {}
+
+    &__card {
+        position: relative;
+        border: 0.77px solid rgb(205, 209, 254);
+    }
+
+    &__img {
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        padding-bottom: 16px;
+    }
+
+    &__button {}
+}
+
+.main-card {}
+
+.info-card {
+    &__flag {}
+
+    &__pin {}
+
+    &__sound {}
+
+    &__setting {}
+}
+
+.info-main__cardTitle {
+    @include t_Manrope();
+    font-size: r(18);
+    line-height: 140%;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+}
+
+.info-main__cardSubTitle {
+    @include t_Manrope();
+    font-weight: 400;
+    line-height: 160%;
+    font-size: r(11);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.info__cardTwo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 24px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+
+        @include t_Manrope();
+        font-size: r(14);
+        color: rgb(34, 34, 34);
+
+        max-width: 250px;
+
+        li {
+            list-style: disc;
+            margin-left: 24px;
+        }
+    }
+
+    p {
+        @include t_Manrope();
+        font-size: r(18);
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: uppercase;
+    }
+}
+
+.info__cardThree {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+
+    p {
+        @include t_Manrope();
+        font-size: r(18);
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+    }
+}
+
+.info-cardThree__input {
+    @include t_Manrope();
+    font-size: r(15);
+    font-weight: 600;
+    line-height: 170%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.info-ButtonAndDontSkip {
+    text-align: center;
+}
+
+.info-card__img {
+    position: absolute;
+}
+
+.info-card__flag {
+    top: -189px;
+    left: 160px;
+    z-index: -1;
+}
+
+.info-card__pin {
+    top: -10px;
+    right: -10px;
+}
+
+.info-card__sound {
+    top: 0px;
+    right: -10px;
+}
+
+.info-card__setting {
+    top: 10px;
+    right: 10px;
+}
+
+.info__hands {
+    position: absolute;
+    top: 18%;
+    right: 8%;
+}
+
+@media (min-width: 426px) {
+    .info__cards {
+        position: relative;
+        left: 8%;
+
+        div {
+            max-width: 500px;
+        }
+    }
+
+    .info-ButtonAndDontSkip {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .info__hands {
+        position: relative;
+        right: inherit;
+        width: 105%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .info-card__flag {
+        left: inherit;
+    }
+}
+
+@media (min-width: 1600px) {
+    .info__hands {
+        right: 22%;
+    }
+}

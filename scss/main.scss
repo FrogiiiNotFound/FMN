@@ -1,0 +1,21 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Inter+Tight:regular,500,600,700);
+
+// helpers
+@import './base/vars';
+@import './base/helpers';
+@import './base/reset';
+@import './base/repeat';
+
+// blocks
+@import './blocks/header';
+@import './blocks/home';
+@import './blocks/know';
+@import './blocks/info';
+@import './blocks/result';
+@import './blocks/auther';
+@import './blocks/feedback';
+@import './blocks/footer';
+@import './blocks/form';
+@import './blocks/popup';

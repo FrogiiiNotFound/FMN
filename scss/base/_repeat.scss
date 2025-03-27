@@ -1,0 +1,34 @@
+// То что повторяеться из блока в блок
+
+._button {
+    padding: 30px 60px;
+    border-radius: 11.82px 0px 11.82px 0px;
+    box-shadow: 5px 5px 20px 0px rgba(48, 111, 213, 0.5);
+    background: rgb(48, 111, 213);
+    color:rgb(255, 255, 255);
+    @include t_Inter();
+    font-weight: 700;
+    font-size:r(12);
+    line-height:p(14,12);
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+._card {
+    padding: 24px;
+    margin-bottom: 24px;
+
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(248, 248, 248);
+}
+
+.main-card {
+    position: relative;
+    border: 1px solid rgb(221, 234, 222);
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 0px rgba(48, 111, 213, 0.25);
+    background: rgb(48, 111, 213);
+
+
+}

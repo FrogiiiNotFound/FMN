@@ -1,0 +1,114 @@
+.popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000000000;
+    background-color: #000000b0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &__image {
+        img {
+            width: 100%;
+            max-width: 700px;
+        }
+    }
+
+    &__content {
+        background-color: #fff;
+        padding: 25px;
+        max-width: 700px;
+    }
+
+    &__number {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 100%;
+        color: #a9a9a9;
+        margin-bottom: 7px;
+    }
+
+    &__phone {
+        margin-bottom: 28px;
+        border: 1px solid #f1f1f1;
+        border-radius: 10px;
+        background: #f1f1f1;
+        padding: 15px 20px;
+        font-weight: 400;
+        font-size: 16px;
+        width: 100%;
+        color: #757575;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            color: #757575;
+        }
+    }
+
+    &__title {
+        font-family: "Inter Tight";
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 95%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #000;
+        margin-bottom: 22px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        padding: 23px 134px;
+        background: #2a8ffa;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+    &__text-butt {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 79%;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__link {
+        text-decoration: underline;
+    }
+
+    &__checkbos {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__policy {
+        font-weight: 300;
+        font-size: 11px;
+        color: #7e7e7e;
+    }
+}
+
+.blue {
+    color: #026fe2;
+}
+
+.pop {
+    display: flex;
+}

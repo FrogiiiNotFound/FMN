@@ -1,0 +1,91 @@
+.form {
+    padding: 70px 0px;
+    position: relative;
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__dekor {
+        position: absolute;
+        top: -82px;
+        left: 0;
+
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #131313;
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 100%;
+        text-align: center;
+        color: #010101;
+        margin-bottom: 21px;
+    }
+
+    &__button {
+        margin: 0 auto;
+        padding: 22px 60px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 174%;
+        text-align: center;
+        color: #fff;
+        box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.3);
+        background: #306fd5;
+        margin-bottom: 18px;
+    }
+
+    &__subtext {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: #393939;
+        margin-bottom: 21px;
+    }
+
+    &__agree {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 127%;
+        text-align: center;
+        color: #393939;
+    }
+
+    &__link {
+        text-decoration: underline;
+    }
+
+    &__button {
+        cursor: pointer;
+    }
+
+    &__light {
+        position: absolute;
+        top: -180px;
+        left: -200px;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 768px) {
+    .form {
+        &__title {
+            font-size: 35px;
+        }
+    }
+}
