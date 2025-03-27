@@ -1,4 +1,5 @@
 .info {
+    position: relative;
     &_dontSkip {
         text-transform: uppercase;
         @include t_Inter();
@@ -16,8 +17,7 @@
         padding: 125px 20px 25px;
     }
 
-    &__cards {
-    }
+    &__cards {}
 
     &__card {
         position: relative;
@@ -30,23 +30,28 @@
         padding-bottom: 16px;
     }
 
-    &__button {
+    &__card-items {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__card-img {
+        width: 30px;
+        height: 30px;
     }
 }
-.main-card {
-}
+
+.main-card {}
+
 .info-card {
-    &__flag {
-    }
+    &__flag {}
 
-    &__pin {
-    }
+    &__pin {}
 
-    &__sound {
-    }
+    &__sound {}
 
-    &__setting {
-    }
+    &__setting {}
 }
 
 .info-main__cardTitle {
@@ -57,6 +62,7 @@
     color: rgb(255, 255, 255);
     padding-bottom: 15px;
 }
+
 .info-main__cardSubTitle {
     @include t_Manrope();
     font-weight: 400;
@@ -98,6 +104,7 @@
         text-transform: uppercase;
     }
 }
+
 .info__cardThree {
     display: flex;
     justify-content: center;
@@ -138,52 +145,73 @@
     left: 160px;
     z-index: -1;
 }
+
 .info-card__pin {
     top: -10px;
     right: -10px;
 }
+
 .info-card__sound {
     top: 0px;
     right: -10px;
 }
+
 .info-card__setting {
     top: 10px;
     right: 10px;
+}
+
+.info__hands {
+    position: absolute;
+    top: 18%;
+    right: 8%;
+}
+
+._card {
+    margin-bottom: 10px;
+}
+
+._button {
+    padding: 25px 50px;
+    margin-bottom: 20px;
+}
+
+.info__cardThree {
+    margin-bottom: 24px;
 }
 
 @media (min-width: 426px) {
     .info__cards {
         position: relative;
         left: 8%;
+
         div {
             max-width: 500px;
         }
+    }
 
-        img {
-            position: absolute;
-            top: 18%;
-            right: 8%;
-        }
-    }
-    .info__card {
-        img {
-            display: none;
-        }
-    }
-    .info__cardThree {
-        img {
-            display: none;
-        }
-    }
     .info-ButtonAndDontSkip {
         display: none;
     }
 }
 
-@media (min-width: 1025px) {
-    .info__cards {
-        img {
-            right: 22%;
-        }
+@media (max-width: 600px) {
+    .info__hands {
+        position: relative;
+        right: inherit;
+        width: 105%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .info-card__flag {
+        left: inherit;
+    }
+}
+
+@media (min-width: 1600px) {
+    .info__hands {
+        right: 22%;
     }
 }

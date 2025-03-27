@@ -1,18 +1,17 @@
 .home {
-    width: 100%;
-    height: 100%;
     position: relative;
 
     &__bg {
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 0;
-        left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &__container {
-        padding: 120px 0px 100px 0px;
+        padding: 150px 0px 50px 0px;
         @include t_Inter();
         display: flex;
         align-items: center;
@@ -42,17 +41,68 @@
         padding-top: 500px;
         padding-bottom: 60px;
         @include t_Inter();
-        font-size: r(30);
+        font-size: 29px;
         line-height: p(36, 30);
         text-align: center;
         z-index: 10;
     }
+
+    &__bg-white {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 3;
+
+        & img {
+            width: 10000px;
+            height: 400px;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+    }
+
+    &__light {
+        position: absolute;
+        z-index: 4;
+
+        bottom: 100px;
+        left: -270px;
+    }
+
+    &__light2 {
+        position: absolute;
+        z-index: 4;
+
+        bottom: -150px;
+        right: -250px;
+    }
+
+    &__text {
+        margin-top: 15px;
+    }
 }
 
-@media (max-width: 590px) {
+
+.animation-word {
+    display: inline-block;
+}
+
+@media (max-width: 528px) {
     .home {
-        &__container {
-            padding-top: 200px;
+        &__bg {
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__bg-white {
+            bottom: 150px;
         }
     }
 }

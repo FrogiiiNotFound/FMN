@@ -30,7 +30,7 @@
     }
 
     &__phone {
-        margin-bottom: 28px;
+        margin-bottom: 25px;
         border: 1px solid #f1f1f1;
         border-radius: 10px;
         background: #f1f1f1;
@@ -103,6 +103,10 @@
         font-size: 11px;
         color: #7e7e7e;
     }
+
+    &__button {
+        cursor: pointer;
+    }
 }
 
 .blue {
@@ -111,4 +115,19 @@
 
 .pop {
     display: flex;
+}
+
+.popup__required {
+    color: red;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    display: none;
+}
+
+.less-margin {
+    margin-bottom: 5px;
+}
+
+.required-active {
+    display: block;
 }

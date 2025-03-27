@@ -29,6 +29,7 @@
             padding-bottom: 10px;
         }
     }
+
     &__dekor {
         position: absolute;
         right: 6px;
@@ -37,6 +38,13 @@
 
     &__men {
         padding-bottom: 30px;
+    }
+
+    &__decor2 {
+        position: absolute;
+        right: -200px;
+        top: -160px;
+        z-index: -1;
     }
 }
 
@@ -50,8 +58,10 @@
         width: 100%;
         max-width: 500px;
     }
+}
 
-    .author__dekor {
-        display: none;
+@media (min-width: 1388px) {
+    .author__decor2 {
+        right: -400px;
     }
 }

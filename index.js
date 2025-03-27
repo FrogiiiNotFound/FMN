@@ -24,5 +24,19 @@ document.addEventListener("click", (e) => {
 sendButton.addEventListener("click", (e) => {
     if (!valiP(inp.value)) {
         e.preventDefault();
+
+        const popupRequired = document.querySelector('.popup__required');
+        const popupPhone = document.querySelector('.popup__phone');
+
+        // Добавляем классы
+        popupRequired.classList.add('required-active');
+        popupPhone.classList.add('less-margin');
+
+        // Убираем классы через 3 секунды
+        setTimeout(() => {
+            popupRequired.classList.remove('required-active');
+            popupPhone.classList.remove('less-margin');
+        }, 3000); // 3000 миллисекунд = 3 секунды
     }
 });
+
