@@ -257,7 +257,7 @@ a {
   z-index: 3;
 }
 .home__bg-white img {
-  width: 2000px;
+  width: 4000px;
   height: 400px;
 }
 .home__button {
@@ -281,6 +281,10 @@ a {
     padding-top: 200px;
   }
 }
+.animation-word {
+  display: inline-block;
+}
+
 .know {
   position: relative;
   padding: 50px 0px;
@@ -319,6 +323,8 @@ a {
           box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: rgb(248, 248, 248);
   padding: 15px 15px 20px 0px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .know__card p {
   font-family: Manrope;
@@ -382,6 +388,11 @@ a {
     display: none;
   }
 }
+.know__card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .info {
   position: relative;
 }
@@ -981,7 +992,7 @@ a {
   z-index: -1;
 }
 .footer__light img {
-  width: 2000px;
+  width: 4000px;
   height: 300px;
 }
 
@@ -1026,6 +1037,7 @@ a {
   margin-bottom: 21px;
 }
 .form__button {
+  cursor: pointer;
   margin: 0 auto;
   padding: 22px 60px;
   text-align: center;
@@ -1056,14 +1068,20 @@ a {
 .form__link {
   text-decoration: underline;
 }
-.form__button {
-  cursor: pointer;
-}
 .form__light {
   position: absolute;
   top: -180px;
   left: -200px;
   z-index: -1;
+}
+.form__guy {
+  position: absolute;
+  bottom: -130px;
+  left: -40px;
+  z-index: -1;
+}
+.form__guy img {
+  width: 210px;
 }
 
 @media (min-width: 768px) {
@@ -1196,6 +1214,9 @@ a {
   font-weight: 300;
   font-size: 11px;
   color: #7e7e7e;
+}
+.popup__button {
+  cursor: pointer;
 }
 
 .blue {

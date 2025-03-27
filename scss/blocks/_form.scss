@@ -37,6 +37,7 @@
     }
 
     &__button {
+        cursor: pointer;
         margin: 0 auto;
         padding: 22px 60px;
         text-align: center;
@@ -71,7 +72,6 @@
     }
 
     &__button {
-        cursor: pointer;
     }
 
     &__light {
@@ -79,6 +79,17 @@
         top: -180px;
         left: -200px;
         z-index: -1;
+    }
+
+    &__guy {
+        position: absolute;
+        bottom: -130px;
+        left: -40px;
+        z-index: -1;
+
+        & img {
+            width: 210px;
+        }
     }
 }
 

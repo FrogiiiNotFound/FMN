@@ -56,7 +56,7 @@
         z-index: 3;
 
         & img {
-            width: 2000px;
+            width: 4000px;
             height: 400px;
         }
     }
@@ -88,4 +88,9 @@
             padding-top: 200px;
         }
     }
+}
+
+
+.animation-word {
+    display: inline-block;
 }

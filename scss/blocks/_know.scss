@@ -39,6 +39,8 @@
             font-size: r(16);
             line-height: 140%;
         }
+
+        transition: all 0.3s linear;
     }
 
     &__subtitle {
@@ -104,4 +106,8 @@
     .know__decor2 {
         display: none;
     }
+}
+
+.know__card:hover {
+    transform: scale(1.1);
 }
