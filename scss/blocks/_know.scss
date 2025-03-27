@@ -1,9 +1,7 @@
 .know {
-    position: relative;
-
     padding: 50px 0px;
-
-    &__container {}
+    &__container {
+    }
 
     &__title {
         @include t_Manrope();
@@ -32,15 +30,13 @@
         box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
         background: rgb(248, 248, 248);
 
-        padding: 15px 15px 20px 0px;
+        padding:  15px 15px 20px 0px;
 
         p {
             @include t_Manrope();
             font-size: r(16);
             line-height: 140%;
         }
-
-        transition: all 0.3s linear;
     }
 
     &__subtitle {
@@ -54,40 +50,23 @@
         text-align: center;
         margin: 0 auto;
     }
-
-    &__decor1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-
-    &__decor2 {
-        position: absolute;
-        bottom: -150px;
-        right: 0;
-        z-index: -1;
-    }
 }
-
-.card-know {}
-
+.card-know {
+}
 .main-card {
     color: #fff;
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
     background: rgb(48, 111, 213);
 }
-
 .know-card {
     &__last {
         padding: 20px;
-
         img {
             position: absolute;
             bottom: 0;
             right: 0;
             width: 40.91px;
-            height: 41.27px;
+height: 41.27px;
         }
     }
 }
@@ -97,17 +76,4 @@
     .know__cards {
         gap: 15px;
     }
-}
-
-@media (min-width: 426px) {
-    .know__decor1 {
-        display: none;
-    }
-    .know__decor2 {
-        display: none;
-    }
-}
-
-.know__card:hover {
-    transform: scale(1.1);
-}
+  }

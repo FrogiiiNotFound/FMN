@@ -12,7 +12,7 @@
     }
 
     &__container {
-        padding: 40px 0px 100px 0px;
+        padding: 120px 0px 100px 0px;
         @include t_Inter();
         display: flex;
         align-items: center;
@@ -47,42 +47,12 @@
         text-align: center;
         z-index: 10;
     }
-
-    &__bg-white {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        z-index: 3;
-
-        & img {
-            width: 4000px;
-            height: 400px;
-        }
-    }
-
-    &__button {
-        cursor: pointer;
-    }
-
-    &__light {
-        position: absolute;
-        z-index: 4;
-
-        bottom: 100px;
-        left: -270px;
-    }
-
-    &__light2 {
-        position: absolute;
-        z-index: 4;
-
-        bottom: -150px;
-        right: -250px;
-    }
 }
 
-
-.animation-word {
-    display: inline-block;
+@media (max-width: 590px) {
+    .home {
+        &__container {
+            padding-top: 200px;
+        }
+    }
 }

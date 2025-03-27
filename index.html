@@ -19,78 +19,61 @@
                     <p class="popup__number">* телефон</p>
                     <input type="tel" class="popup__phone" placeholder="Phone number">
                     <div class="popup__info">
-                        <h2 class="popup__title">Реєструйтесь на <span class="blue">безкоштовний курс</span> психічного
-                            здоров’я</h2>
+                        <h2 class="popup__title">Реєструйтесь на <span class="blue">безкоштовний курс</span> психічного здоров’я</h2>
                         <p class="popup__text">Вкажіть номер телефону та перейдіть в месенджер</p>
-                        <a href="https://telegram.me/Nezabudka_psychology_bot">
-                            <div class="popup__button">
-                                <div class="popup__text-butt">Telegram</div>
-                                <div class="popup__icon">
-                                    <img src="./img/icons/telegram.svg" alt="">
-                                </div>
+                        <a href="" class="popup__button">
+                            <p class="popup__text-butt">Telegram</p>
+                            <div class="popup__icon">
+                                <img src="./img/icons/telegram.svg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="popup__checkbos">
                         <input type="checkbox" class="popup__check">
                         <p class="popup__policy">
-                            You agree with <a href="" class="popup__link"> Terms of Use & Privacy</a> <a href=""
-                                class="popup__link"> Policy</a>
+                            You agree with <a href="" class="popup__link"> Terms of Use & Privacy</a> <a href="" class="popup__link"> Policy</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+        <header class="header">
+            <div class="header__container">
+                <ul class="header__list">
+                    <li class="HeaderList_active">Програма</li>
+                    <li>Результат</li>
+                    <li>Про курс</li>
+                    <li>Відгуки</li>
+                    <li>Контакти</li>
+                </ul>
+            </div>
+        </header>
         <main class="main">
             <section class="home">
                 <div class="home__bg _ibg"><img src="img/home-bg.png" alt=""></div>
                 <div class="home__container">
                     <div class="home__texts">
-                        <div class="home__subtitle animation-text">
-                            <div>
-                                <div class="animation-word">Старт</div>
-                                <div class="animation-word">курсу:</div>
-                                <div class="animation-word">10</div>
-                                <div class="animation-word">квітня</div>
-                            </div>
-                            <div>
-                                <div class="animation-word">Формат:</div>
-                                <div class="animation-word">Онлайн</div>
-                            </div>
+                        <div class="home__subtitle">
+                            <p>Старт курсу: 10 квітня </p>
+                            <p>Формат: Онлайн</p>
                         </div>
-                        <div class="home__title animation-text">
-                            <div class="animation-word">FMN</div>
-                            <div class="animation-word">–</div>
-                            <div class="animation-word">Курс</div>
-                            <div class="animation-word">підтримки</div>
-                            <div class="animation-word">психічного</div>
-                            <div class="animation-word">здоров’я</div>
-                            <div class="animation-word">для</div>
-                            <div class="animation-word">українців</div>
+                        <div class="home__title">
+                            FMN – Курс підтримки психічного здоров’я для українців
                         </div>
                         <div class="home__button _button popup-button">Записатися безкоштовно</div>
                     </div>
                 </div>
-                <div class="home__bg-white">
-                    <img src="img/home-white.png" alt="">
-                </div>
-                <div class="home__light">
-                    <img src="img/home-light.png" alt="">
-                </div>
-                <div class="home__light2">
-                    <img src="img/home-light.png" alt="">
-                </div>
             </section>
             <section class="know">
                 <div class="know__container">
-                    <div class="know__title animation-text">
-                        <div class="animation-word">Знайомо?</div>
+                    <div class="know__title">
+                        Знайомо?
                     </div>
                     <div class="know__cards">
                         <div class="know__card card-know main-card">
                             <img src="img/know/1.svg" alt="">
-                            <div>Війна в Україні змінила твоє життя, і ти відчуваєш постійний стрес та емоційне
-                                виснаження?</div>
+                            <p>Війна в Україні змінила твоє життя, і ти відчуваєш постійний стрес та емоційне
+                                виснаження?</p>
                         </div>
                         <div class="know__card card-know">
                             <img src="img/know/2.svg" alt="">
@@ -115,23 +98,7 @@
                                 справлятися зі стресом та підтримувати тих, хто цього потребує</p>
                         </div>
                     </div>
-                    <div class="know__subtitle animation-text">
-                        <div class="animation-word">Разом</div>
-                        <div class="animation-word">ми</div>
-                        <div class="animation-word">зміцнимо</div>
-                        <div class="animation-word">психологічну</div>
-                        <div class="animation-word">стійкість</div>
-                        <div class="animation-word">та</div>
-                        <div class="animation-word">побудуємо</div>
-                        <div class="animation-word">спільноту</div>
-                        <div class="animation-word">взаємопідтримки!</div>
-                    </div>
-                </div>
-                <div class="know__decor1">
-                    <img src="img/know/light1.png" alt="">
-                </div>
-                <div class="know__decor2">
-                    <img src="img/know/light2.png" alt="">
+                    <div class="know__subtitle">Разом ми зміцнимо психологічну стійкість та побудуємо спільноту взаємопідтримки!</div>
                 </div>
             </section>
             <section class="info">
@@ -160,32 +127,32 @@
                                 <li>Усіх, хто прагне підтримувати своє психічне здоров’я та допомагати іншим</li>
                             </ul>
                         </div>
-                        <img class="info__hands" src="img/info/hands.png" alt="" class="info__img">
+                        <img src="img/info/hands.png" alt="" class="info__img">
                         <div class="info__cardThree main-card _card">
                             <img src="img/info/setting.svg" alt="" class="info-card__setting info-card__img">
                             <p>Формат:</p>
                             <div class="info-cardThree__input">
-                                <div class="info__card-items">
-                                    <img class="info__card-img" src="img/info/tv.png" alt="">
+                                <div>
+                                    <input type="checkbox" id="online" name="online" />
                                     <label for="online">Онлайн формат</label>
                                 </div>
-                                <div class="info__card-items">
-                                    <img class="info__card-img" src="img/info/camera.png" alt="">
+                                <div>
+                                    <input type="checkbox" id="lecture" name="lecture" />
                                     <label for="lecture">Інтерактивні лекції</label>
                                 </div>
-                                <div class="info__card-items">
-                                    <img class="info__card-img" src="img/info/list.png" alt="">
+                                <div>
+                                    <input type="checkbox" id="tasks" name="tasks" />
                                     <label for="tasks">Практичні завдання</label>
                                 </div>
-                                <div class="info__card-items">
-                                    <img class="info__card-img" src="img/info/medicine.png" alt="">
+                                <div>
+                                    <input type="checkbox" id="help" name="help" />
                                     <label for="help">Підтримка експертів</label>
                                 </div>
                             </div>
                         </div>
                         <div class="info-ButtonAndDontSkip">
-                            <div class="info__button _button popup-button">
-                                <p>Записатися безкоштовно</p>
+                            <div class="info__button _button">
+                                <a href="">Записатися безкоштовно</a>
                             </div>
                             <div class="info_dontSkip">
                                 <p>Увага до 01 квітня</p>
@@ -202,13 +169,7 @@
                         <img src="img/result/star.svg" alt="">
                         <p>результати</p>
                     </div>
-                    <div class="result__title animation-text">
-                        <div class="animation-word">Що</div>
-                        <div class="animation-word">ви</div>
-                        <div class="animation-word">отримаєте</div>
-                        <div class="animation-word">завдяки</div>
-                        <div class="animation-word">курсу</div>
-                    </div>
+                    <div class="result__title">Що ви отримаєте завдяки курсу</div>
                     <div class="result__texts">
                         <img src="img/result/gift.svg" alt="" class="result__textsDekor">
                         <div><img src="img/result/star in circle.svg" alt="">
@@ -231,6 +192,7 @@
                         </div>
                         <img src="img/result/woman.png" alt="" class="woman-result__img">
                     </div>
+                    
                 </div>
                 <div class="result__buttonBG">
                     <div class="result__button _button popup-button">Записатися безкоштовно</div>
@@ -239,13 +201,9 @@
             <section class="author">
                 <div class="author__container">
                     <img class="author__dekor" src="img/auther/pencil.svg" alt="">
-                    <div class="author__decor2">
-                        <img src="img/auther/decor2.png" alt="">
-                    </div>
                     <div class="author__texts">
-                        <div class="author__title animation-text">
-                            <div class="animation-word">Про</div>
-                            <div class="animation-word">авторів</div>
+                        <div class="author__title">
+                            Про авторів
                         </div>
                         <div class="author__subtitle">
                             <p>Цей курс не є терапією чи підтримкою групи. Це класична навчальна програма. Ця навчальна
@@ -270,16 +228,9 @@
                         <img src="img/comment/star.svg" alt="">
                         <p>результати</p>
                     </div>
-                    <div class="feedback__title animation-text">
-                        <p>
-                        <div class="animation-word">Реальні</div>
-                        <div class="animation-word">відгуки</div>
-                        </p>
-                        <p>
-                        <div class="animation-word">про</div>
-                        <div class="animation-word">наш</div>
-                        <div class="animation-word">курс</div>
-                        </p>
+                    <div class="feedback__title">
+                        <p>Реальні відгуки</p>
+                        <p>про наш курс</p>
                     </div>
                     <div class="feedback_comments ">
                         <div class="comment-feedback">
@@ -377,32 +328,14 @@
                 <div class="form__container">
                     <div class="form__dekor"><img src="img/form/tick-dynamic-clay.svg" alt=""></div>
                     <div class="form__info">
-                        <div class="form__title animation-text">
-                            <div class="animation-word">Реєструйся</div>
-                            <div class="animation-word">на</div>
-                            <div class="animation-word"><span class="blue">безкоштовний</span></div>
-                            <div class="animation-word">курс</div>
-                            <div class="animation-word">та</div>
-                            <div class="animation-word">отримай</div>
-                        </div>
-                        <div class="form__text animation-text">
-                            <div class="animation-word">Бонус:"Ефективні</div>
-                            <div class="animation-word">техніки</div>
-                            <div class="animation-word">психології"</div>
-                        </div>
+                        <h2 class="form__title">Реєструйся на <span class="blue">безкоштовний курс</span> та отримай</h2>
+                        <p class="form__text">Бонус:"Ефективні техніки психології"</p>
                     </div>
-                    <div class="form__button _button popup-button">ЗАРЕЄСТРУВАТИСЬ</div>
+                    <div class="form__button popup-button">ЗАРЕЄСТРУВАТИСЬ</div>
                     <p class="form__subtext">До 1 квітня</p>
                     <p class="form__agree">
-                        Натискаючи на кнопку, я погоджуюсь на <a href="" class="form__link">обробку персональних
-                            даних</a>
+                        Натискаючи на кнопку, я погоджуюсь на <a href="" class="form__link">обробку персональних даних</a>
                     </p>
-                    <div class="form__guy">
-                        <img src="img/form/guy.png" alt="">
-                    </div>
-                </div>
-                <div class="form__light">
-                    <img src="img/form/light.png" alt="">
                 </div>
             </section>
         </main>
@@ -440,15 +373,9 @@
                     <p>Всі права захищені.</p>
                 </div>
             </div>
-            <div class="footer__light">
-                <img src="img/footer/light.png" alt="">
-            </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <script src="index.js"></script>
-    <script src="gsap.js"></script>
 </body>
 
 </html>
