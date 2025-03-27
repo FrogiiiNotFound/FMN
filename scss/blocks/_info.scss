@@ -30,7 +30,16 @@
         padding-bottom: 16px;
     }
 
-    &__button {}
+    &__card-items {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__card-img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .main-card {}
