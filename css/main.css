@@ -195,7 +195,7 @@ a {
   left: 0;
 }
 .home__container {
-  padding: 120px 0px 100px 0px;
+  padding: 40px 0px 100px 0px;
   font-family: Inter Tight;
   font-weight: 500;
   display: -webkit-box;
@@ -276,11 +276,6 @@ a {
   right: -250px;
 }
 
-@media (max-width: 590px) {
-  .home__container {
-    padding-top: 200px;
-  }
-}
 .animation-word {
   display: inline-block;
 }
@@ -880,6 +875,8 @@ a {
   background: rgb(48, 111, 213);
   color: rgb(255, 255, 255);
   padding-top: 50px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
 }
 .footer__text {
   display: -webkit-box;
@@ -1077,7 +1074,7 @@ a {
 .form__guy {
   position: absolute;
   bottom: -130px;
-  left: -40px;
+  left: 0px;
   z-index: -1;
 }
 .form__guy img {
