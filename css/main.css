@@ -378,6 +378,9 @@ a {
   .know__decor1 {
     display: none;
   }
+  .know__decor2 {
+    display: none;
+  }
 }
 .info {
   position: relative;
