@@ -305,7 +305,7 @@ a {
 
 @media (max-width: 528px) {
   .home {
-    height: 856px;
+    height: 780px;
   }
   .home__bg {
     position: absolute;
@@ -1360,6 +1360,7 @@ a {
 
 .less-margin {
   margin-bottom: 5px;
+  border: 1px solid red;
 }
 
 .required-active {
