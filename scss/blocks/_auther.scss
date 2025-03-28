@@ -1,7 +1,7 @@
 .author {
     &__container {
         position: relative;
-        padding: 35px 15px 50px;
+        padding: 35px 15px 40px
     }
 
     &__texts {
@@ -57,6 +57,13 @@
     .author__texts {
         width: 100%;
         max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .author__men {
+        padding: 40px 0px 0px 0px;
+        width: 350px;
     }
 }
 

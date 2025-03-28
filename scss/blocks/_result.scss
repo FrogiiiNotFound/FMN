@@ -31,7 +31,7 @@
 
     &__texts {
         position: relative;
-        padding: 30px 0px;
+        padding: 20px 0px;
         div {
             display: flex;
         }
@@ -55,11 +55,21 @@
     &__button {
         cursor: pointer;
     }
-}
-.woman-result {
-    &__img {
+
+    &__button:hover {
+        background-color: rgb(221, 221, 221);
     }
 }
+.woman-result {
+    text-align: center;
+}
+
+.woman-result__img {
+    width: 350px;
+    margin: 0px auto;
+    text-align: center;
+}
+
 .woman-result {
     padding-top: 55px;
     position: relative;
@@ -98,12 +108,13 @@
 .result__button {
     background: rgb(255, 255, 255);
     color: rgb(48, 111, 213);
+    margin-bottom: 0px !important;
 }
 
 .result__buttonBG {
     background-color: rgb(48, 111, 213);
     text-align: center;
-    padding: 15px;
+    padding: 20px 0px;
     width: 100vm;
 }
 

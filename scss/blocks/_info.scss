@@ -40,6 +40,14 @@
         width: 30px;
         height: 30px;
     }
+
+    &__button:hover {
+        background-color: rgb(40, 92, 177);
+    }
+
+    &__button {
+        margin-bottom: 10px !important;
+    }
 }
 
 .main-card {}
@@ -206,7 +214,7 @@
 
 @media (max-width: 1000px) {
     .info-card__flag {
-        left: inherit;
+        left: 50px;
     }
 }
 

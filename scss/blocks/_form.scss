@@ -91,6 +91,10 @@
             width: 210px;
         }
     }
+
+    &__button:hover {
+        background-color: rgb(40, 92, 177);
+    }
 }
 
 @media (min-width: 768px) {
