@@ -256,7 +256,7 @@ a {
   padding-bottom: 60px;
   font-family: Inter Tight;
   font-weight: 500;
-  font-size: 27px;
+  font-size: 25px;
   line-height: 120%;
   text-align: center;
   z-index: 10;
@@ -320,7 +320,7 @@ a {
     bottom: 200px;
   }
   .home__title {
-    padding-top: 400px;
+    padding-top: 350px;
   }
   .home__text {
     text-align: center;
@@ -789,6 +789,12 @@ a {
   width: 100vm;
 }
 
+.form__agree {
+  font-size: 10px !important;
+  max-width: 70%;
+  margin: 0px auto 80px auto;
+}
+
 @media (min-width: 426px) {
   .woman-result__text {
     display: none;
@@ -974,6 +980,16 @@ a {
 }
 .comment-feedback__dekor-3 {
   bottom: -55px;
+}
+
+.comment-feedback__avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.comment-feedback {
+  gap: 10px;
 }
 
 .footer {

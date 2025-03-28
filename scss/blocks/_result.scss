@@ -118,6 +118,12 @@
     width: 100vm;
 }
 
+.form__agree {
+    font-size: 10px !important;
+    max-width: 70%;
+    margin: 0px auto 80px auto;
+}
+
 @media (min-width: 426px) {
     .woman-result__text {
         display: none;
